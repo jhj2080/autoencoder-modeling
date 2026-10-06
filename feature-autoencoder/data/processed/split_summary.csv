@@ -1,0 +1,10 @@
+﻿split,state,label,windows
+cal,A,0,91
+cal,B,0,17
+test,A,0,122
+test,B,0,22
+test,anom,1,28
+train,A,0,532
+train,B,0,93
+val,A,0,142
+val,B,0,24

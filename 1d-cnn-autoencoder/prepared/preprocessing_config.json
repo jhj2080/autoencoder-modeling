@@ -1,0 +1,65 @@
+{
+  "channels": [
+    "AI0_Vibration",
+    "AI1_Vibration",
+    "AI2_Current"
+  ],
+  "length": 16,
+  "stride": 16,
+  "sample_interval_seconds": 0.1,
+  "first_to_last_seconds": 1.5,
+  "seed": 42,
+  "scaler_mean": [
+    -2.8205122950819686e-05,
+    -0.000323549180327869,
+    0.6164499577868853
+  ],
+  "scaler_scale": [
+    0.0699014947284011,
+    0.1176014706650927,
+    122.48019617650031
+  ],
+  "scaler_fit_unique_train_rows": 9760,
+  "current_quantum": null,
+  "split_strategy": "segment groups randomized within 10 chronological strata",
+  "normal_audit": {
+    "original_rows": 20000,
+    "deduplicated_rows": 19999,
+    "removed_duplicates": 1,
+    "segments": 599
+  },
+  "anomaly_audit": {
+    "original_rows": 600,
+    "deduplicated_rows": 600,
+    "removed_duplicates": 0,
+    "segments": 21
+  },
+  "coverage": {
+    "train": {
+      "windows": 610,
+      "unique_used_rows": 9760,
+      "assigned_rows": 11113
+    },
+    "val": {
+      "windows": 160,
+      "unique_used_rows": 2560,
+      "assigned_rows": 2881
+    },
+    "cal": {
+      "windows": 116,
+      "unique_used_rows": 1856,
+      "assigned_rows": 2042
+    },
+    "test_normal": {
+      "windows": 157,
+      "unique_used_rows": 2512,
+      "assigned_rows": 2899
+    },
+    "test_anomaly": {
+      "windows": 28,
+      "unique_used_rows": 448,
+      "assigned_rows": 600
+    }
+  },
+  "excluded_short_normal_rows": 1064
+}

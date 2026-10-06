@@ -1,0 +1,47 @@
+{
+  "feature_set": "F1",
+  "evaluation_status": "exploratory: supplied feature selection used all anomaly labels",
+  "architecture": [
+    8,
+    6,
+    3,
+    6,
+    8
+  ],
+  "seed": 42,
+  "best_epoch": 1000,
+  "epochs_run": 1000,
+  "best_val_mse": 0.06757966927910262,
+  "threshold": 0.2425813279525978,
+  "target_calibration_tail": 0.05,
+  "calibration_count": 108,
+  "calibration_rank": 104,
+  "calibration_observed_fpr": 0.037037037037037035,
+  "tn": 135,
+  "fp": 9,
+  "fn": 0,
+  "tp": 28,
+  "precision": 0.7567567567567568,
+  "recall": 1.0,
+  "f1": 0.8615384615384616,
+  "roc_auc": 1.0,
+  "average_precision": 1.0,
+  "test_normal_fpr": 0.0625,
+  "normal_fpr_by_state": {
+    "A": {
+      "n": 122,
+      "false_alarms": 9,
+      "fpr": 0.07377049180327869
+    },
+    "B": {
+      "n": 22,
+      "false_alarms": 0,
+      "fpr": 0.0
+    }
+  },
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "sklearn": "1.8.0"
+  }
+}

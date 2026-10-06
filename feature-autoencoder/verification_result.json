@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": [
+    "segment split exclusivity",
+    "raw-row membership exclusivity",
+    "finite constant-signal features",
+    "train-only scaler statistics",
+    "NPZ metadata alignment",
+    "saved-model raw CSV inference consistency for F1 and F2",
+    "reversed timestamps rejected"
+  ],
+  "note": "Window interval checks also executed in preprocessing; not proof of independent evaluation."
+}

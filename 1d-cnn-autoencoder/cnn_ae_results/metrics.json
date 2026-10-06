@@ -1,0 +1,42 @@
+{
+  "accuracy": 0.9837837837837838,
+  "f1_score": 0.9454545454545454,
+  "recall": 0.9285714285714286,
+  "precision": 0.9629629629629629,
+  "specificity": 0.9936305732484076,
+  "model": "1D CNN autoencoder, bottleneck (4,4), MSE across 16 timesteps and 3 channels",
+  "source_npz": "C:\\Users\\전호진\\Desktop\\진로 및 취업\\공모전 및 대회\\AI 데이터분석 경진대회\\3. 소성가공 예지보전 AI 데이터셋\\1d-cnn autoencoder 모델링\\cnn_ae_starter\\cnn_ae_starter\\prepared\\cnn_ae_data.npz",
+  "seed": 42,
+  "alpha": 0.05,
+  "calibration_count": 116,
+  "threshold_rank_1_based": 112,
+  "threshold": 0.37529728176325144,
+  "decision_rule": "reconstruction_mse > threshold",
+  "best_epoch": 250,
+  "normal_test_count": 157,
+  "anomaly_test_count": 28,
+  "tn": 156,
+  "fp": 1,
+  "fn": 2,
+  "tp": 26,
+  "false_positive_rate": 0.006369426751592357,
+  "anomaly_recall": 0.9285714285714286,
+  "roc_auc": 0.9940855323020928,
+  "average_precision": 0.9782159391534392,
+  "channel_names": [
+    "AI0_Vibration",
+    "AI1_Vibration",
+    "AI2_Current"
+  ],
+  "channel_mean_mse_normal": [
+    0.18807568036440644,
+    0.15190339529345437,
+    0.029035018504507473
+  ],
+  "channel_mean_mse_anomaly": [
+    23.195526565124702,
+    13.073870226089152,
+    0.9072935093576191
+  ],
+  "limitations": "Normal/anomaly collected on different days; 28 anomaly windows are not 28 independent failures. Calibration bound needs exchangeable normal data."
+}

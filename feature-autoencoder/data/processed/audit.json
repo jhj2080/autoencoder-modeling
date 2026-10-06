@@ -1,0 +1,52 @@
+{
+  "normal": {
+    "raw_rows": 20000,
+    "deduplicated_rows": 19999,
+    "duplicates_removed": 1,
+    "segments": 599,
+    "windows": 1043,
+    "used_rows": 16688,
+    "unused_rows": 3311,
+    "unused_fraction": 0.16555827791389566
+  },
+  "anomaly": {
+    "raw_rows": 600,
+    "deduplicated_rows": 600,
+    "duplicates_removed": 0,
+    "segments": 21,
+    "windows": 28,
+    "used_rows": 448,
+    "unused_rows": 152,
+    "unused_fraction": 0.2533333333333333
+  },
+  "raw_sample_overlap": 0,
+  "segment_split_violation": 0,
+  "boundary_violation": 0,
+  "finite_arrays": true,
+  "seed": 42,
+  "window": 16,
+  "stride": 16,
+  "sample_interval_seconds": 0.1,
+  "current_quantum": 1.192093,
+  "group_split_target": {
+    "train": 0.6,
+    "val": 0.15,
+    "cal": 0.1,
+    "test": 0.15
+  },
+  "state_B_segment_range_zero_based_inclusive": [
+    472,
+    559
+  ],
+  "sha256": {
+    "press_data_normal.csv": "f2d61cb3b3108f49a3305d2966b3a31f26942ac8af8ffc9eb531b432b945b0a7",
+    "outlier_data.csv": "9fad8c238e63dba3257d8be32a32362548955c772171a95c0d2af61b0435ed2e"
+  },
+  "evaluation_status": "exploratory: supplied feature selection used all anomaly labels",
+  "caveats": [
+    "Existing CNN split manifest was not supplied; this is a new group split.",
+    "Known A/B interval is retrospective and dataset-specific.",
+    "No independent day/equipment holdout; groups can remain correlated.",
+    "Fixed quantum, window and feature sets inherit full-data exploration."
+  ]
+}
